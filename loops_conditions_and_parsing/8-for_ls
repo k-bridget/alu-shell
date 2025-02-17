@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# using for loop to display content of the current working directoy
+for file in *; do
+  if [ -f "$file" ] && [ ! -f ".*" ]; then
+    name="${file#*-}" 
+    echo "$name"
+  fi
+done

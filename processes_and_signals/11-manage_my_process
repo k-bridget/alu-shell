@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-#This script indefinitely writes I am alive! to the file /tmp/my_process
-#In between every I am alive! message, the program should pause for 2 seconds
+# This script starts, stops and restarts manage my process
 argv1=$1
 tmpfile="/var/run/my_process.pid"
 
